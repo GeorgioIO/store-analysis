@@ -1,0 +1,10 @@
+labels_for_pie = ['Central' , 'East' , 'South' , 'West']
+colors_for_pie = ['#1f77b3' , '#2ca02c', '#ff7f0e' , '#d62728']
+
+plt.pie(region_contribution['Sales'] , labels=labels_for_pie , colors=colors_for_pie , autopct='%.2f %%')
+plt.title('Sales Contribution Per Region')
+plt.show()
+
+plt.pie(region_contribution['Profit'] , labels=labels_for_pie , colors=colors_for_pie , autopct='%.2f %%')
+plt.title("Profit Contribution Per Region")
+plt.show()

@@ -1,0 +1,5 @@
+least_10_profitable_orders_bar = plt.barh(least_ten_profitable_orders.index , -least_ten_profitable_orders['Profit'])
+plt.xlabel("Losses (-) ($USD)")
+plt.ylabel("Order ID")
+plt.title("Least 10 Profitable orders")
+plt.show()
