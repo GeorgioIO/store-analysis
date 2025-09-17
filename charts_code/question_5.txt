@@ -1,0 +1,17 @@
+# Top 10 states
+plt.figure(figsize=(15 , 6))
+profit_per_top_state_bars = plt.bar(top_ten_profitable_state.index , top_ten_profitable_state['Total Profit'])
+plt.bar_label(profit_per_top_state_bars , label_type='edge' , padding=3)
+plt.ylabel("Total Profit ($USD)")
+plt.title("What are the 10 most profitable states ?")
+plt.savefig("figures/question_5(1)_fig.png") 
+plt.show()
+
+# Least 10 tates
+plt.figure(figsize=(15 , 6))
+profit_per_least_state_bars = plt.bar(least_10_profitable_state.index , least_10_profitable_state['Total Profit'])
+plt.bar_label(profit_per_least_state_bars , label_type='edge' , padding=3)
+plt.ylabel("Total Profit ($USD)")
+plt.title("What are the 10 least profitable states?")
+plt.savefig("figures/question_5(2)_fig.png") 
+plt.show()

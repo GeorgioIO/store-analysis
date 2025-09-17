@@ -1,0 +1,7 @@
+plt.figure(figsize=(14,6))
+plt.barh(most_demanded_product.index, most_demanded_product.values)
+plt.xlabel('Quantity Sold')
+plt.title('Top 10 Most Demanded Products')
+plt.gca().invert_yaxis()  # convert the largest on top
+plt.savefig("figures/question_1_fig.png") 
+plt.show()

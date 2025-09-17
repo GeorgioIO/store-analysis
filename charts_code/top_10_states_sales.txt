@@ -1,7 +1,0 @@
-# Top states
-plt.figure(figsize=(15 , 6))
-sales_per_top_state_bars = plt.bar(total_sales_per_state.index , total_sales_per_state['Sales'])
-plt.bar_label(sales_per_top_state_bars , label_type='edge' , padding=3)
-plt.ylabel("Total Sales ($USD)")
-plt.title("Top 10 states by sales")
-plt.show()

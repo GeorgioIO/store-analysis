@@ -1,16 +1,14 @@
-plt.style.use('ggplot')
-
 plt.figure(figsize=(12 ,6))
 for year in sales_by_month_yearly.index:
-    plt.plot(months , profit_by_month_yearly.loc[year] , label=year , marker='o')
-    max_month = profit_by_month_yearly.loc[year].idxmax()
-    max_month_value = profit_by_month_yearly.loc[year].max()
+    plt.plot(months , sales_by_month_yearly.loc[year] , label=year , marker='o')
+    max_month = sales_by_month_yearly.loc[year].idxmax()
+    max_month_value = sales_by_month_yearly.loc[year].max()
     max_month_value_formatted = humanize.intword(max_month_value).replace(" thousand" ,  "k")    
-    print(max_month_value_formatted)
     month_index = months.index(max_month)
     plt.annotate(max_month_value_formatted , xy=(month_index , max_month_value) , xytext=(month_index - 0.4 , max_month_value - 1500)  , arrowprops=dict(arrowstyle='->',color='gray'))
     
 plt.ylabel("Profit ($USD)")
 plt.title("Total Profit Per Year Over The Months ($USD)")
-plt.legend()    
+plt.legend()
+plt.savefig("figures/question_3_fig.png") 
 plt.show()

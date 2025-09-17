@@ -1,7 +1,0 @@
-# Least 10 States
-plt.figure(figsize=(15 , 6))
-sales_per_least_state_bars = plt.bar(least_sales_per_state.index , least_sales_per_state['Sales'])
-plt.bar_label(sales_per_least_state_bars , label_type='edge' , padding=3)
-plt.ylabel("Total Sales ($USD)")
-plt.title("Least 10 states by sales")
-plt.show()

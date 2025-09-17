@@ -1,8 +1,0 @@
-plt.figure(figsize=(12,6))
-top_ten_prof_orders_bars = plt.bar(top_ten_profitable_orders.index , top_ten_profitable_orders['Profit'])
-plt.bar_label(top_ten_prof_orders_bars , label_type='edge' , padding=3)
-plt.xticks(fontsize=6)
-plt.xlabel("Order ID")
-plt.ylabel("Order Profit in USD")
-plt.title("Top 10 most profitable orders ($USD)")
-plt.show()
